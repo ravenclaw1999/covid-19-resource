@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+body {
+	text-align: center;
+	background: linear-gradient(to bottom, #66ccff, #ff66ff 100%);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: 'Quicksand', sans-serif;
+	color: #003d99;
+}
+
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+li{
+	float: right;
+	justify-content: flex-end;
+	display: list-item;
+}
+
+li a:hover{
+	background-color: white;
+	color: black;
+}
+
+li a{
+	padding: 14px 16px;
+	text-align: center;
+	display: block;
+	color: white;
+	text-decoration: none;
+}
+
+.heading{
+	font-size: 130px;
+	color: white;
+}
+
+.home-page{
+	
+}
+
+.subheading{
+	color: #3366ff;
+	font-size: 30px;
+	font-style: italic;
+}
+
+
+.img{
+	height: 150px;
+	border-radius: 8px;
+}
+
+.img:hover{
+	transform: scaleX(-1);
+}
+
+.heading-pic{
+	padding: 0px;
+	margin-bottom: -65px;
+}
+
+/* Code for collapsible */
+
+.wrap-collabsible {
+  margin-bottom: 1.2rem 0;
+}
+
+input[type='checkbox'] {
+  display: none;
+}
+
+.lbl-toggle {
+  display: block;
+  
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: center;
+
+  padding: 1rem;
+
+  color: ##dedcd6;
+  background: #18cbdd;
+
+  cursor: pointer;
+
+  border-radius: 5px;
+  transition: all 0.25s ease-out;
+  
+  
+  
+}
+
+.lbl-toggle:hover {
+  color: white;
+}
+
+.lbl-toggle::before {
+  content: ' ';
+  display: inline-block;
+
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid currentColor;
+  vertical-align: middle;
+  
+  margin-right: .7rem;
+  transform: translateY(-2px);
+
+  transition: transform .2s ease-out;
+  
+}
+
+.toggle:checked + .lbl-toggle::before {
+  transform: rotate(90deg) translateX(-3px);
+}
+
+.collapsible-content {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height .25s ease-in-out;
+}
+
+.toggle:checked + .lbl-toggle + .collapsible-content {
+  max-height: 100vh;
+}
+
+.toggle:checked + .lbl-toggle {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+a{
+	color: #003d99;
+}
+
+a:hover{
+	color: white;
+}
+
+.resources{
+	display: flex;
+	justify-content: space-between;
+}
+
+.thanks{
+	font-size: 30px;
+	font-family: 'Dancing Script', cursive;
+}
+
+.doctor{
+	height: 150px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 5px;
+}
+
+.map{
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 5px;
+}
